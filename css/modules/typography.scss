@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $base-font-family;
+    color: $heading-color;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    line-height: $h1-line-height;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    line-height: $h2-line-height;
+    font-weight: $headings-font-weight;
+    letter-spacing: $h2-letter-spacing;
+    font-family: $heading-font-family;
+    @include bp-sm {
+        font-size: $font-size-h2-sm;
+    }
+    @include bp-xs {
+        font-size: $font-size-h2-xs;
+    }
+}
+
+h3 {
+    font-size: $font-size-h3;
+    line-height: $h3-line-height;
+    font-weight: $base-font-weight;
+    letter-spacing: $h3-letter-spacing;
+    font-family: $base-font-family;
+    @include bp-sm {
+        font-size: $font-size-h3-sm;
+    }
+    @include bp-xs {
+        font-size: $font-size-h3-xs;
+    }
+}
+
+h4 {
+    font-weight: $sub-headings-font-weight;
+    font-size: $font-size-h4;
+    letter-spacing: $h4-letter-spacing;
+    font-family: $base-font-family;
+}
+
+h5 {
+    font-weight: $sub-headings-font-weight;
+    font-size: $font-size-h5;
+    letter-spacing: $h5-letter-spacing;
+    font-family: $base-font-family;
+}
+
+h6 {
+    font-weight: $sub-headings-font-weight;
+    font-size: $font-size-h6;
+    letter-spacing: $h6-letter-spacing;
+    line-height: $h6-line-height;
+    font-family: $base-font-family;
+}
+
+small {
+    font-size: $font-size-small;
+}
+
+.lead {
+    line-height: $lead-line-height;
+    font-size: $lead-font-size;
+    font-weight: $base-font-weight;
+}

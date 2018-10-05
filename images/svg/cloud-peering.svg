@@ -1,0 +1,27 @@
+<svg id="cloud-peering.svg" xmlns="http://www.w3.org/2000/svg" width="32" height="31.94" viewBox="0 0 32 31.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4724f4;
+      }
+
+      .cls-1, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+        stroke: #4724f4;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke-linecap: square;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <path id="_2-weather_-_cloud_cloudy_" data-name="2-weather - cloud cloudy " class="cls-1" d="M998,5322.95V5323H984a8.819,8.819,0,0,1-9-8.63c0-4.27,3.25-6.83,7.5-7.52,1.2-3.42,3.025-6.85,8.5-6.85,4.9,0,6.668,3.94,8.111,6.86,4.479,0.74,7.889,2.53,7.889,7.03A9.265,9.265,0,0,1,998,5322.95Zm-0.32-14.31c-0.859-2.77-2.732-6.73-6.681-6.73-3.986,0-6.415,3.47-6.9,6.72-0.034,0-.065-0.01-0.1-0.01-3.866,0-7,2.05-7,5.75a6.856,6.856,0,0,0,7,6.71h14v-0.05a7.3,7.3,0,0,0,7-7.14C1005,5309.98,1001.74,5308.73,997.68,5308.64Z" transform="translate(-975 -5300)"/>
+  <circle class="cls-2" cx="16" cy="20" r="6.188"/>
+  <path class="cls-3" d="M994.361,5325.45l3.279,5.1" transform="translate(-975 -5300)"/>
+</svg>

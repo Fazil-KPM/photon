@@ -1,0 +1,44 @@
+$grid-columns: 12;
+//----------------------------------*\
+// SCSS bootstrap
+//----------------------------------*/
+@import "bootstrap";
+@import 'modules/variables.scss';
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+@import 'mixins/breakpoints.scss';
+@import 'mixins/gradient.scss';
+@import 'mixins/padding-margin';
+@import 'mixins/border-radius';
+@import 'mixins/add-border';
+@import 'mixins/color';
+//----------------------------------*\
+// SCSS MODULES
+//----------------------------------*/
+@import 'modules/defaults.scss';
+@import 'modules/colors.scss';
+@import 'modules/typography.scss';
+@import 'modules/misc.scss';
+@import 'modules/buttons.scss';
+//----------------------------------*\
+// SCSS PARTIALS
+//----------------------------------*/
+@import 'partials/header.scss';
+@import 'partials/sidebar.scss';
+@import 'partials/footer.scss';
+@import 'partials/home-page.scss';
+html {
+    body {
+        font-size: $base-font-size;
+    }
+    @include bp-lg {
+        font-size: 100%;
+    }
+    @include bp-xs {
+        font-size: 90%;
+    }
+    @include bp-xxs {
+        font-size: 85%;
+    }
+}

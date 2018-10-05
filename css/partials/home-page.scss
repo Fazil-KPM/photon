@@ -1,0 +1,755 @@
+//----------------------------------*\
+// SCSS style
+//----------------------------------*/
+.input-style {
+    height: 67px;
+    background-color: white;
+    border: 1px solid #c3cbce;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    font-size: 18px;
+    padding: 1.25rem;
+    &:focus {
+        border: 1px solid #4724f4;
+        box-shadow: 0 7px 17px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+        outline: 0 none;
+    }
+    @include bp-xs {
+        height: 63px;
+    }
+    @include bp-xxs {
+        height: 61px;
+    }
+}
+
+.hero-section {
+    height: 100vh;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1px;
+    overflow: hidden;
+    @include bp-sm {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+    .hero-bg {
+        max-width: 1920px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        @include bp-sm {
+            flex-direction: column-reverse;
+            height: auto;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            .hero_intro {
+                max-width: 350px;
+                width: 100%;
+                position: relative;
+                h2 {
+                    margin-bottom: 1.5625rem;
+                }
+                @include bp-sm {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    margin-top: 3rem;
+                }
+                @include bp-xxs {
+                    margin-top: 1.25rem;
+                }
+                .btn-click {
+                    &:focus {
+                        transform: scale(0.98);
+                    }
+                }
+                .form-text {
+                    margin-top: 0;
+                    opacity: 0;
+                    transform: scale(0.98);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    z-index: -1;
+                    .input-style {
+                        padding-right: 65px;
+                    }
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        right: 1.25rem;
+                        z-index: 1;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border: 0;
+                        color: #4724F4;
+                        transform: translateY(-45%);
+                        // @include bp-sm {
+                        //     transform: translateY(-14%);
+                        // }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .open-form {
+                    opacity: 1;
+                    transform: scale(1);
+                    z-index: 0;
+                }
+                .btn-close {
+                    opacity: 0;
+                    transform: scale(0.98);
+                }
+            }
+        }
+        .hero_image {
+            position: absolute;
+            top: 50%;
+            right: -420px;
+            transform: translateY(-50%);
+            @include bp-xxl {
+                right: -290px;
+            }
+            @include bp-lg {
+                right: 0;
+            }
+            @include bp-sm {
+                position: relative;
+                top: 0;
+                transform: translateY(0);
+            }
+            figure {
+                max-width: 1462px;
+                margin-bottom: 0;
+                @include bp-xxl {
+                    max-width: 1170px;
+                }
+                @include bp-xll {
+                    max-width: 1100px;
+                }
+                @include bp-lg {
+                    max-width: 560px;
+                }
+                @include bp-sm {
+                    max-width: 720px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                @include bp-xs {
+                    max-width: 540px;
+                }
+                @include bp-xxs {
+                    max-width: 540px;
+                    width: 540px;
+                }
+            }
+        }
+    }
+    @include bp-sm {
+        height: auto;
+    }
+}
+
+.section-benefits {
+    background-image: url("../images/bg-benefits.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-bottom: 18rem;
+    background-size: 50%;
+    background-color: white;
+    @include bp-sm {
+        background-position: center bottom 0;
+        background-size: 471.5px;
+        padding-bottom: 20rem;
+    }
+    @include bp-xs {
+        padding-bottom: 16rem;
+        background-position: center bottom -9rem;
+    }
+    @include bp-xxs {
+        padding-bottom: 8rem;
+        background-position: center bottom -15rem;
+    }
+    .benefits_headline {
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+    .benefits_details {
+        @include bp-sm {
+            padding-left: 0;
+            padding-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .benefits_row {
+            max-width: 425px;
+            width: 100%;
+            margin-top: 2.8125rem;
+            @include bp-sm {
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 360px;
+            }
+            @include bp-xs {
+                max-width: 425px;
+            }
+            @include bp-xxs {
+                max-width: 100%;
+            }
+            .benefits_block {
+                display: flex;
+                @include bp-xxs {
+                    flex-wrap: wrap;
+                }
+                figure {
+                    width: 60px;
+                    flex-shrink: 0;
+                    img {
+                        max-width: 100%;
+                        margin-top: 4px;
+                        @include bp-xxs {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .benefits_info {
+                    margin-left: 14px;
+                    @include bp-xxs {
+                        margin-left: 0;
+                    }
+                    h5 {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-photon-os {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1px;
+    h2 {
+        margin-bottom: 0;
+    }
+    .photon_os_row {
+        margin-top: 3rem;
+        @include bp-xs {
+            margin-top: 0;
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        &:nth-child(odd) {
+            .photon_os_info {
+                margin-left: auto;
+                @include bp-sm {
+                    margin-right: auto;
+                }
+            }
+        }
+        figure,
+        .photon_os_info {
+            margin-top: 7rem;
+            width: 100%;
+            @include bp-sm {
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+        }
+        figure {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+        }
+        .photon_os_info {
+            max-width: 475px;
+            h4 {
+                margin-bottom: 1.25rem
+            }
+            .lead {
+                max-width: 440px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    .photon_os_efficient {
+        figure {
+            max-width: 355.5px;
+        }
+    }
+    .photon_os_stability {
+        figure {
+            max-width: 472px;
+        }
+    }
+    .photon_os_secure {
+        figure {
+            max-width: 417px;
+        }
+    }
+    .photon_os_planetary {
+        figure {
+            max-width: 300px;
+        }
+    }
+}
+
+.section-features {
+    h2 {
+        margin-bottom: 0;
+    }
+    .row {
+        margin-top: 1.875rem;
+        @include bp-xs {
+            margin-top: 0;
+        }
+        .features_single {
+            margin-top: 5.625rem;
+            h6 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.section-subscribe {
+    background-color: #f3f8fa;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1px;
+    background-image: url("../images/bg-subscribe.png");
+    background-position: center left -67px;
+    background-repeat: no-repeat;
+    background-size: 395px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    @include bp-xs {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .subscribe_row {
+        @include bp-sm {
+            max-width: 380px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+        }
+        @include bp-xs {
+            background-color: white;
+            padding: 1.875rem 10px;
+            position: relative;
+            top: 70px;
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+        }
+        .subscribe_text {
+            max-width: 380px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            h2 {
+                margin-bottom: 0;
+            }
+            @include bp-xll {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+        .subscribe_form {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: calc(100% - 380px);
+            width: 100%;
+            align-items: center;
+            @include bp-xll {
+                max-width: 100%;
+                justify-content: center;
+            }
+            // display: flex;
+            // flex-wrap: wrap;
+            // @include bp-sm {
+            //     padding: 0;
+            // }
+            // .row {
+            //     display: flex;
+            //     align-items: center;
+            //     width: 100%;
+            //     @include bp-sm {
+            //         margin: 0;
+            //     }
+            .subscribe_col {
+                max-width: 380px;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                @include bp-xll {
+                    margin-top: 1.25rem;
+                }
+                // @include bp-sm {
+                //     &:first-child {
+                //         margin-top: 0;
+                //     }
+                // }
+                input.input-style {
+                    @extend .input-style;
+                    color: darken($base-font-color, 15%);
+                    &::-webkit-input-placeholder {
+                        color: $base-font-color;
+                    }
+                    &:-ms-input-placeholder {
+                        color: $base-font-color;
+                    }
+                    &::-moz-placeholder {
+                        color: $base-font-color;
+                        opacity: 1;
+                    }
+                    &:-moz-placeholder {
+                        color: $base-font-color;
+                        opacity: 1;
+                    }
+                }
+            }
+            // }
+        }
+    }
+}
+
+.section-advisors {
+    h2 {
+        margin-bottom: 0;
+    }
+    .advisors_company {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        // margin-top: 1.875rem;
+        // @include bp-xs {
+        //     margin-top: 0;
+        // }
+        figure {
+            margin-bottom: 0;
+            max-width: 420px;
+            width: 100%;
+            margin-top: 5rem;
+            @include bp-sm {
+                max-width: 330px;
+                margin-top: 3rem;
+            }
+            @include bp-xs {
+                max-width: 255px;
+            }
+            @include bp-xxs {
+                max-width: 200px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 2rem;
+            }
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                display: table;
+            }
+        }
+    }
+    .row {
+        .advisors_single {
+            margin-top: 5.625rem;
+            @include bp-xxs {
+                text-align: center;
+            }
+            figure {
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                overflow: hidden;
+                @include bp-xxs {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+.section-team {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1px;
+    @include bp-xs {
+        padding-top: 12rem;
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+    .row {
+        margin-top: 3rem;
+        @include bp-xs {
+            margin-top: 0;
+        }
+        .team_single {
+            margin-top: 5.625rem;
+            figure {
+                max-width: 269px;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                @include bp-sm {
+                    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+                }
+            }
+            figcaption {
+                margin-top: 3.5rem;
+                h4 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    margin-bottom: 0;
+                    -webkit-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                .team_details {
+                    opacity: 0;
+                    -webkit-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    transform: translateY(0);
+                    @include bp-sm {
+                        opacity: 1;
+                        margin-top: 10px;
+                    }
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 0;
+                        margin-top: 15px;
+                        li {
+                            margin-right: 1.5625rem;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                figure {
+                    transform: scale(1.15);
+                    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+                }
+                figcaption {
+                    >p {
+                        opacity: 0;
+                        -webkit-transform: translateY(-25px);
+                        -ms-transform: translateY(-25px);
+                        transform: translateY(-25px);
+                    }
+                    .team_details {
+                        opacity: 1;
+                        -webkit-transform: translateY(-25px);
+                        -ms-transform: translateY(-25px);
+                        transform: translateY(-25px);
+                    }
+                }
+            }
+            @include bp-sm {
+                &:hover {
+                    figure {
+                        transform: scale(1);
+                        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+                    }
+                    figcaption {
+                        >p {
+                            opacity: 1;
+                            -webkit-transform: translateY(0);
+                            -ms-transform: translateY(0);
+                            transform: translateY(0);
+                        }
+                        .team_details {
+                            opacity: 1;
+                            -webkit-transform: translateY(0);
+                            -ms-transform: translateY(0);
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-video {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1px;
+    .video_wrapper {
+        margin-top: 5.625rem;
+        a {
+            box-shadow: 0 85px 70px -70px rgba(0, 0, 0, 0.2);
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 960px;
+            height: auto;
+            width: 100%;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+    }
+}
+
+.modal {
+    // background-color: white;
+    width: 100%;
+    .modal-dialog {
+        transform: scale(0.9) !important;
+        max-width: 948px;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        .modal-content {
+            width: 100%;
+            border: 0;
+            iframe {
+                border: 0;
+                width: 100%;
+                @include bp-sm {
+                    height: 436px;
+                    max-width: 758px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @include bp-xs {
+                    height: 326px;
+                    max-width: 573px;
+                }
+            }
+        }
+    }
+    &.show {
+        .modal-dialog {
+            transform: scale(1) !important;
+        }
+    }
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content {
+    @include bp-sm {
+        max-width: 758px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include bp-xs {
+        max-width: 573px;
+    }
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    border-bottom: 0;
+    display: none;
+    @include bp-sm {
+        display: block;
+    }
+}
+
+.modal-backdrop {
+    background-color: white;
+    &.show {
+        opacity: 1;
+    }
+}
+
+.close {
+    font-size: 2.5rem;
+    color: #4e4c63;
+    text-shadow: none;
+    opacity: 1;
+}
+
+
+/* Input field that looks like a button */
+
+// .email-field {
+//     width: 80px;
+//     display: inline-block;
+//     color: #f4f2ca;
+//     text-align: center;
+//     background-color: #d8492e;
+//     padding: .9em 1.8em;
+//     border: none;
+//     cursor: pointer;
+//     outline: none;
+//     -webkit-border-radius: 4px;
+//     -moz-border-radius: 4px;
+//     border-radius: 4px;
+//     -webkit-transition: all .1s linear;
+//     -moz-transition: all .1s linear;
+//     transition: all .1s linear;
+// }
+// .email-field:hover {
+//     background-color: #d0432a;
+// }
+
+/* after button is clicked */
+
+// .email-field.active {
+//     width: 200px;
+//     outline: none;
+//     color: #efaa9d;
+//     text-align: left;
+//     cursor: inherit;
+// }
+
+/* Email submit button */
+
+// .btn-submit {
+//     width: 35px;
+//     height: 35px;
+//     border: none;
+//     text-indent: -9999px;
+//     opacity: .25;
+//     background: url(http://helixpowered.com/assets/img/arrow-circle-on-right.svg) no-repeat;
+//     background-size: 13px;
+//     background-position: 0 1px;
+//     -webkit-transition: all .2s linear;
+//     -moz-transition: all .2s linear;
+//     transition: all .2s linear;
+//     cursor: pointer;
+//     /* for demo only */
+//     display: none;
+// }
+// .btn-submit:hover {
+//     opacity: .33;
+// }
+// .btn-submit.show {
+//     display: inline-block;
+//     background-size: 33px;
+// }

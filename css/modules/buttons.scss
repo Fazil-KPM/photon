@@ -1,0 +1,66 @@
+.btn-input,
+.btn {
+    padding: 10px 15px;
+    border-radius: $btn-border-radius;
+    color: white;
+    font-size: $btn-font-size;
+    text-align: center;
+    font-weight: $btn-font-weight;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    font-family: $base-font-family;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        color: white;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.btn-lg {
+    padding: 1.25rem;
+    border-radius: $btn-lg-border-radius;
+    color: white;
+    font-weight: $btn-font-weight;
+    font-size: $btn-lg-font-size;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    display: table;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    border: 0;
+    font-family: $base-font-family;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:hover {
+        color: white;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.btn-inverse {
+    background-color: $btn-inverse-bg;
+    &:focus,
+    &:hover {
+        background-color: $btn-inverse-hover;
+    }
+}
+
+.btn-primary {
+    background-color: $btn-blue-bg;
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+    &:focus,
+    &:hover {
+        background-color: $btn-blue-hover;
+    }
+}

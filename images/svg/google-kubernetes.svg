@@ -1,0 +1,21 @@
+<svg id="google-kubernetes.svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4724f4;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #4724f4;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="_28-interface_-_clock_time" data-name="28-interface - clock time" class="cls-1" d="M1276,5900a16,16,0,1,1,16-16A16,16,0,0,1,1276,5900Zm0-30a14,14,0,1,0,14,14A14,14,0,0,0,1276,5870Z" transform="translate(-1260 -5868)"/>
+  <path class="cls-2" d="M1276,5884h9.09a9.09,9.09,0,0,1-18.18,0c0-5.02,4.79-9,9.09-9a9.023,9.023,0,0,1,5.65,2.11" transform="translate(-1260 -5868)"/>
+</svg>

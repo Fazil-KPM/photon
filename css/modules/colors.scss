@@ -1,0 +1,6 @@
+$btn-blue-bg: $brand-blue !default;
+$btn-inverse-bg: $brand-inverse !default;
+$btn-inverse-hover: darken($btn-inverse-bg, 15%) !default;
+$btn-blue-hover: darken($btn-blue-bg, 15%) !default;
+$btn-inverse-hover: $brand-blue;
+$fill-grey-hover: darken($fill-grey, 15%) !default;

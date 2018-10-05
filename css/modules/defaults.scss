@@ -1,0 +1,216 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $body-bg;
+    color: $base-font-color;
+    font-weight: $base-font-weight;
+    font-family: $base-font-family !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.no-padding {
+    @include padding-all(0);
+}
+
+.no-padding-left {
+    @include padding-left(0);
+}
+
+.no-padding-right {
+    @include padding-right(0);
+}
+
+.no-padding-top {
+    @include padding-top(0);
+}
+
+.no-padding-bottom {
+    @include padding-bottom(0);
+}
+
+.no-margin {
+    @include margin-all(0);
+}
+
+.no-margin-left {
+    @include margin-left(0);
+}
+
+.no-margin-right {
+    @include margin-right(0);
+}
+
+.no-margin-top {
+    @include margin-top(0);
+}
+
+.no-margin-bottom {
+    @include margin-bottom(0);
+}
+
+.no-border-radius {
+    @include add-border-radius(0, "all");
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.section-control {
+    display: table;
+    @extend .full-width;
+}
+
+$slow-transition: all 0.5s ease;
+$fast-transition: all 0.3s ease;
+.transition {
+    @include transition($fast-transition);
+}
+
+$box-shadow-normal: 0 30px 38px rgba(0, 0, 0, .15);
+$box-shadow-light: 0 30px 38px rgba(0, 0, 0, .15);
+$box-shadow-dark: 0 30px 38px rgba(0, 0, 0, .15);
+.box-shadow {
+    @include box-shadow($box-shadow-normal);
+}
+
+.style-type li {
+    list-style-type: none;
+}
+
+.transformX {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.transformY {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.transform-center {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.cover {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+// .header-top {
+//     margin-top: 81px;
+//     @include bp-xs {
+//         margin-top: 55px;
+//     }
+// }
+.section-spacing {
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+    @include bp-xs {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+small {
+    color: $brand-blue;
+    font-size: $font-size-small;
+    font-weight: $small-font-weight;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: $small-letter-spacing;
+}
+
+.fill-grey {
+    fill: $fill-grey;
+    fill-rule: evenodd;
+    opacity: 0.7;
+    &:hover {
+        fill: $fill-grey-hover;
+    }
+}
+
+input {
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+    &::-webkit-input-placeholder {
+        font-family: $base-font-family;
+        font-weight: $base-font-weight;
+    }
+    &:-ms-input-placeholder {
+        font-family: $base-font-family;
+        font-weight: $base-font-weight;
+    }
+    &::-moz-placeholder {
+        font-family: $base-font-family;
+        font-weight: $base-font-weight;
+        opacity: 1;
+    }
+    &:-moz-placeholder {
+        font-family: $base-font-family;
+        font-weight: $base-font-weight;
+        opacity: 1;
+    }
+}
+
+// .fade.in {
+//     opacity: 1;
+// }
+// .modal.in .modal-dialog {
+//     -webkit-transform: translate(0, 0);
+//     -o-transform: translate(0, 0);
+//     transform: translate(0, 0);
+// }
+// .modal-backdrop.in {
+//     opacity: 0.5;
+// }
